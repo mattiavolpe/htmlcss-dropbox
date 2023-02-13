@@ -102,6 +102,10 @@ hr {
   align-items: center;
 }
 
+.ai-fs {
+  align-items: flex-start;
+}
+
 .btn {
   font-size: 1rem;
   font-weight: 700;
@@ -282,9 +286,9 @@ hr {
 /* #region Header */
 
 #app_header {
-  /* position: sticky;
+  position: sticky;
   top: 0;
-  left: 0; */
+  left: 0;
   height: 80px;
   background-color: var(--db-white);
   box-shadow: 0 0 5px 0 var(--db-black);
@@ -374,6 +378,7 @@ hr {
 #plans_list .price,
 #plans_list .expiring_type,
 #plans_list .buy_now,
+#plans_list .hot_points,
 #plans_list ul > li {
   font-size: 0.875rem;
 }
@@ -448,8 +453,13 @@ hr {
   color: var(--db-primary-blue);
 }
 
-#plans_list div:last-of-type {
-  width: 100%;
+.plan_right_section {
+  width: calc((((100% + 2px) / 12) * 4) - (100px / 3));
+  padding-left: 42px;
+}
+
+.plan_right_section button {
+  width: calc(100% - 2px);
 }
 
 #partner {
