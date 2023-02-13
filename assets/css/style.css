@@ -305,6 +305,7 @@ hr {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 1;
   height: 80px;
   background-color: var(--db-white);
   box-shadow: 0 0 5px 0 var(--db-black);
@@ -580,6 +581,21 @@ hr {
 
 #use_business {
   padding: 135px 0;
+}
+
+#use_business .row {
+  gap: 150px;
+}
+
+#use_business_title {
+  color: var(--db-bordeaux);
+  padding: 0;
+}
+
+#use_business .btn {
+  border: none;
+  margin-top: 15px;
+  padding: 0.8rem 0;
 }
 
 #faq {
