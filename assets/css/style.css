@@ -28,3 +28,63 @@ body {
 }
 
 /* #endregion Common */
+
+/* #region Utility */
+
+.row {
+  display: flex;
+}
+
+.col-6 {
+  width: calc((100% / 12) * 6);
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+/* #endregion Utility */
+
+/* #region Debug */
+
+.debug #app_header {
+  height: 80px;
+  background-color: red;
+}
+
+.debug #app_header .row {
+  height: 100%;
+}
+
+.debug .col-6 {
+  outline: 1px solid black;
+  height: 100%;
+}
+
+/* #endregion Debug */
+
+/* #region Header */
+
+#app_header {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+/* #endregion Header */
+
+/* #region Main */
+
+
+
+/* #endregion Main */
+
+/* #region Footer */
+
+
+
+/* #endregion Footer */
