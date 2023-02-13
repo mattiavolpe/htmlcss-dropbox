@@ -12,6 +12,7 @@
   --db-turquoise: #0093ce;
   --db-red: #ff1c1c;
   --db-gray: #f5f5f5;
+  --db-dark-gray: #a0a0a0;
   --db-dark-red: #d5001f;
   --db-dark-blue: #0d2481;
   --db-yellow: #ffd830;
@@ -39,6 +40,11 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid var(--db-dark-gray);
 }
 
 /* #endregion Common */
@@ -101,6 +107,19 @@ a {
   font-weight: 700;
   border: none;
   padding: 0.5rem 1rem;
+}
+
+.section_title {
+  font-size: 2.5rem;
+  padding: 60px 0;
+}
+
+.btn.wide {
+  width: 100%;
+}
+
+.short_hr {
+  width: 20%;
 }
 
 /* #endregion Utility */
@@ -327,11 +346,6 @@ a {
   padding-top: 90px;
 }
 
-#plans_title {
-  font-size: 2.5rem;
-  padding: 60px 0;
-}
-
 #recurrent_payment > label {
   font-size: 13px;
 }
@@ -350,6 +364,88 @@ a {
   flex-wrap: wrap;
   gap: 50px;
   margin-top: 50px;
+}
+
+#plans_list > * {
+  border: 1px solid var(--db-dark-gray);
+}
+
+#plans_list .plan_type,
+#plans_list .price,
+#plans_list .expiring_type,
+#plans_list .buy_now,
+#plans_list ul > li {
+  font-size: 0.875rem;
+}
+
+#plans_list .plan_type {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  border-bottom: 1px solid var(--db-dark-gray);
+}
+
+#plans_list .card_main_content {
+  padding: 30px;
+}
+
+#plans_list .plan_type,
+#plans_list .price,
+#plans_list .expiring_type,
+#plans_list .buy_now {
+  display: block;
+}
+
+#plans_list .price {
+  font-weight: 700;
+  padding: 15px 0;
+}
+
+#plans_list .expiring_type {
+  margin-bottom: 55px;
+  color: var(--db-dark-gray);
+}
+
+#plans_list .plan_title {
+  font-size: 1.5rem;
+}
+
+#plans_list ul > li {
+  margin-bottom: 25px;
+}
+
+#plans_list .card_main_content i,
+#plans_list .card_main_content i + span {
+  line-height: 20px;
+}
+
+#plans_list .card_main_content .row i {
+  margin-right: 5px;
+}
+
+#plans_list .card_main_content button {
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 0.8125rem;
+  padding-bottom: 0.8125rem;
+}
+
+#plans_list .buy_now {
+  margin: 35px 0;
+}
+
+#plans_list .buy_now a {
+  color: var(--db-link);
+  text-decoration: underline;
+}
+
+#plans_list .hot_points {
+  margin: 55px 0 40px 0;
+}
+
+#plans_list li .fa-check {
+  color: var(--db-primary-blue);
 }
 
 #plans_list div:last-of-type {
