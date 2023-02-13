@@ -453,13 +453,9 @@ hr {
   color: var(--db-primary-blue);
 }
 
-.plan_right_section {
+#plans_list .col-12 .plan_right_section {
   width: calc((((100% + 2px) / 12) * 4) - (100px / 3));
   padding-left: 42px;
-}
-
-.plan_right_section button {
-  width: calc(100% - 2px);
 }
 
 #partner {
