@@ -108,7 +108,6 @@ body {
   outline: 1px solid black;
   height: calc((100% / 3) * 2);
   background-color: blue;
-  /* margin-top: 60px; */
 }
 
 .debug #plans {
@@ -135,6 +134,15 @@ body {
 
 .debug #plans_list div:last-of-type {
   height: 260px;
+}
+
+.debug #partner .row {
+  background-color: red;
+  height: 510px;
+}
+
+.debug #partner .row > * {
+  outline: 1px solid black;
 }
 
 /* #endregion Debug */
@@ -166,6 +174,10 @@ body {
 
 #plans_list div:last-of-type {
   width: 100%;
+}
+
+#partner {
+  margin: 150px 0;
 }
 
 /* #endregion Main */
