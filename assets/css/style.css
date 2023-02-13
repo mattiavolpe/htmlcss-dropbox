@@ -37,6 +37,11 @@ body {
   margin: auto;
 }
 
+.container_sm {
+  width: 85%;
+  margin: auto;
+}
+
 .row {
   display: flex;
 }
@@ -51,6 +56,10 @@ body {
 
 .col-8 {
   width: calc((100% / 12) * 8);
+}
+
+.col-12 {
+  width: 100%;
 }
 
 .jc-sb {
@@ -102,6 +111,32 @@ body {
   /* margin-top: 60px; */
 }
 
+.debug #plans {
+  margin-top: 60px;
+}
+
+.debug #plans h2 {
+  height: 190px;
+  outline: 1px solid black;
+  background-color: cyan;
+}
+
+.debug #recurrent_payment {
+  height: 70px;
+  outline: 1px solid black;
+  background-color: magenta;
+}
+
+.debug #plans_list div {
+  height: 950px;
+  outline: 1px solid black;
+  background-color: yellow;
+}
+
+.debug #plans_list div:last-of-type {
+  height: 260px;
+}
+
 /* #endregion Debug */
 
 /* #region Header */
@@ -118,6 +153,19 @@ body {
 
 #jumbo {
   background-color: var(--db-light-blue);
+}
+
+#plans_list {
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+#plans_list div {
+  width: calc(((100% / 12) * 4) - (100px / 3));
+}
+
+#plans_list div:last-of-type {
+  width: 100%;
 }
 
 /* #endregion Main */
