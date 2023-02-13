@@ -1,5 +1,22 @@
 /* #region Common */
 
+:root {
+  --db-white: #ffffff;
+  --db-black: #000000;
+  --db-primary-blue: #0061ff;
+  --db-light-blue: #b4d0e7;
+  --db-bordeaux: #61082b;
+  --db-light-green: #d1e9cd;
+  --db-green: #a2d39b;
+  --db-turquoise: #0093ce;
+  --db-red: #ff1c1c;
+  --db-gray: #f5f5f5;
+  --db-dark-red: #d5001f;
+  --db-dark-blue: #0d2481;
+  --db-yellow: #ffd830;
+  --db-link: #2f3cf3;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
