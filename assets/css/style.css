@@ -4,6 +4,7 @@
   --db-white: #ffffff;
   --db-black: #000000;
   --db-primary-blue: #0061ff;
+  --db-primary-blue-hover: #3c87ff;
   --db-light-blue: #b4d0e7;
   --db-bordeaux: #61082b;
   --db-light-green: #d1e9cd;
@@ -25,6 +26,19 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* #endregion Common */
@@ -74,8 +88,19 @@ body {
   justify-content: space-between;
 }
 
+.jc-fe {
+  justify-content: flex-end;
+}
+
 .ai-c {
   align-items: center;
+}
+
+.btn {
+  border: none;
+  background-color: var(--db-primary-blue);
+  padding: 0.625rem 1rem;
+  color: var(--db-white);
 }
 
 /* #endregion Utility */
@@ -83,7 +108,6 @@ body {
 /* #region Debug */
 
 .debug #app_header {
-  height: 80px;
   background-color: red;
 }
 
@@ -242,6 +266,46 @@ body {
   position: sticky;
   top: 0;
   left: 0;
+  height: 80px;
+  background-color: var(--db-white);
+  box-shadow: 0 0 5px 0 var(--db-black);
+}
+
+#app_header > .row {
+  height: 100%;
+  padding: 0 20px;
+}
+
+#header_left > nav,
+#header_left > nav > ul > li:nth-child(even),
+#header_right > nav > ul > li:nth-child(2) {
+  margin: 0 40px;
+}
+
+#header_right > nav > ul > li:last-child {
+  margin-left: 20px;
+}
+
+#app_header a {
+  color: var(--db-black);
+  line-height: 80px;
+}
+
+#header_right button {
+  transition: background-color 0.3s;
+}
+
+#app_header li:hover,
+#header_right button:hover {
+  cursor: pointer;
+}
+
+#app_header li:not(#header_right li:last-of-type):hover {
+  border-bottom: 2px solid var(--db-black);
+}
+
+#header_right button:hover {
+  background-color: var(--db-primary-blue-hover);
 }
 
 /* #endregion Header */
