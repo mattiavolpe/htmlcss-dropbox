@@ -383,6 +383,7 @@ hr {
 #monthly,
 #yearly {
   vertical-align: middle;
+  cursor: pointer;
 }
 
 #yearly {
