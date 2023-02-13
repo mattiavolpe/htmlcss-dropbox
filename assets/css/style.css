@@ -180,6 +180,19 @@ body {
   background-color: blue;
 }
 
+.debug #use_business {
+  height: 360px;
+}
+
+.debug #use_business .row {
+  height: 90px;
+}
+
+.debug #use_business .row > * {
+  outline: 1px solid black;
+  background-color: red;
+}
+
 /* #endregion Debug */
 
 /* #region Header */
@@ -194,7 +207,8 @@ body {
 
 /* #region Main */
 
-#jumbo {
+#jumbo,
+#use_business {
   background-color: var(--db-light-blue);
 }
 
@@ -226,6 +240,10 @@ body {
 
 #partners_logos .col-4.row {
   flex-wrap: wrap;
+}
+
+#use_business {
+  padding: 135px 0;
 }
 
 /* #endregion Main */
