@@ -602,6 +602,27 @@ hr {
   padding: 150px 0;
 }
 
+#faq .row {
+  padding: 45px 0;
+}
+
+#faq .question {
+  font-size: 1rem;
+}
+
+#faq .answer {
+  display: none;
+  margin-top: 20px;
+}
+
+#faq .expand_collapse {
+  padding-right: 45px;
+}
+
+#faq .expand_collapse .fa-angle-up {
+  display: none;
+}
+
 /* #endregion Main */
 
 /* #region Footer */
@@ -647,6 +668,15 @@ hr {
 
 #app_header li:not(#header_right li:last-of-type):hover {
   border-bottom: 2px solid var(--db-black);
+}
+
+#faq .row:hover .answer,
+#faq .row:hover .fa-angle-up {
+  display: block;
+}
+
+#faq .row:hover .fa-angle-down {
+  display: none;
 }
 
 /* #endregion Effects */
