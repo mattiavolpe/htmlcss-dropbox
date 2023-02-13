@@ -426,7 +426,8 @@ hr {
 }
 
 #plans_list .plan_title,
-#partner .section_title_sm {
+#partner .section_title_sm,
+#operations .section_title_sm {
   font-size: 1.5rem;
 }
 
@@ -490,7 +491,11 @@ hr {
 
 #operations .row {
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 0 50px;
+}
+
+#operations .row p {
+  margin: 30px 0;
 }
 
 #business_teams {
