@@ -455,9 +455,14 @@ hr {
   margin: 35px 0;
 }
 
-#plans_list .buy_now a {
+#plans_list .buy_now a,
+#business_teams a {
   color: var(--db-link);
   text-decoration: underline;
+}
+
+#business_teams .section_title.col-8 {
+  padding: 0;
 }
 
 #plans_list .hot_points {
