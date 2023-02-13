@@ -193,6 +193,16 @@ body {
   background-color: red;
 }
 
+.debug #faq {
+  height: 724px;
+}
+
+.debug #faq .container_sm {
+  outline: 1px solid black;
+  background-color: purple;
+  height: 424px;
+}
+
 /* #endregion Debug */
 
 /* #region Header */
@@ -244,6 +254,10 @@ body {
 
 #use_business {
   padding: 135px 0;
+}
+
+#faq {
+  padding: 150px 0;
 }
 
 /* #endregion Main */
