@@ -97,10 +97,10 @@ a {
 }
 
 .btn {
+  font-size: 1rem;
+  font-weight: 700;
   border: none;
-  background-color: var(--db-primary-blue);
   padding: 0.5rem 1rem;
-  color: var(--db-white);
 }
 
 /* #endregion Utility */
@@ -291,25 +291,6 @@ a {
   line-height: 80px;
 }
 
-#header_right button {
-  font-size: 1rem;
-  font-weight: 700;
-  transition: background-color 0.3s;
-}
-
-#app_header li:hover,
-#header_right button:hover {
-  cursor: pointer;
-}
-
-#app_header li:not(#header_right li:last-of-type):hover {
-  border-bottom: 2px solid var(--db-black);
-}
-
-#header_right button:hover {
-  background-color: var(--db-primary-blue-hover);
-}
-
 /* #endregion Header */
 
 /* #region Main */
@@ -317,6 +298,29 @@ a {
 #jumbo,
 #use_business {
   background-color: var(--db-light-blue);
+}
+
+#jumbo {
+  padding: 20px 0;
+}
+
+#jumbo .row {
+  margin-bottom: -90px;
+}
+
+#jumbo_title {
+  font-size: 5rem;
+  font-weight: 800;
+  padding: 65px 0;
+}
+
+#jumbo .row .btn {
+  margin: 35px 0;
+}
+
+#jumbo .row span {
+  display: block;
+  margin-bottom: 75px;
 }
 
 #plans_list {
@@ -374,3 +378,27 @@ a {
 }
 
 /* #endregion Footer */
+
+/* #region Effects */
+
+.btn.blue {
+  transition: background-color 0.3s;
+  background-color: var(--db-primary-blue);
+  color: var(--db-white);
+}
+
+.btn.blue:hover {
+  background-color: var(--db-primary-blue-hover);
+  cursor: pointer;
+}
+
+#app_header li:hover,
+#header_right button:hover {
+  cursor: pointer;
+}
+
+#app_header li:not(#header_right li:last-of-type):hover {
+  border-bottom: 2px solid var(--db-black);
+}
+
+/* #endregion Effects */
