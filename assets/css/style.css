@@ -91,6 +91,10 @@ hr {
   width: 20%;
 }
 
+.jc-c {
+  justify-content: center;
+}
+
 .jc-sb {
   justify-content: space-between;
 }
@@ -240,7 +244,6 @@ hr {
 
 .debug #partners_logos .col-4.row > * {
   height: 50%;
-  aspect-ratio: 1;
   background-color: blue;
 }
 
@@ -461,10 +464,6 @@ hr {
   text-decoration: underline;
 }
 
-#business_teams .section_title.col-8 {
-  padding: 0;
-}
-
 #plans_list .hot_points {
   margin: 55px 0 40px 0;
 }
@@ -507,12 +506,76 @@ hr {
   margin: 150px 0;
 }
 
-#business_teams h2 {
+#business_teams .section_title.col-8 {
   margin: 60px 0;
+  padding: 0;
+}
+
+#partners_logos .col-4:nth-child(2) {
+  background-color: var(--db-gray);
+  padding: 50px;
+}
+
+#partners_logos .col-4:nth-child(2) img {
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+#partners_logos .col-4:nth-child(2) p {
+  margin: 50px 0;
 }
 
 #partners_logos .col-4.row {
   flex-wrap: wrap;
+}
+
+#partners_logos .col-4.row .col-6 {
+  aspect-ratio: 1;
+  padding: 60px;
+}
+
+#partners_logos .col-4.row .col-6 img {
+  filter: invert(1);
+}
+
+#partners_logos .col-4.row #designit{
+  background-color: var(--db-light-green);
+  padding: 15px;
+}
+
+#designit > .inner {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background-color: var(--db-green);
+}
+
+#asu {
+  background-color: var(--db-bordeaux);
+}
+
+#uf {
+  background-color: var(--db-turquoise);
+}
+
+#topps {
+  background-color: var(--db-red);
+}
+
+#wbr {
+  background-color: var(--db-dark-red);
+}
+
+#hearst {
+  background-color: var(--db-light-blue);
+}
+
+#lp {
+  background-color: var(--db-dark-blue);
+}
+
+#cco {
+  background-color: var(--db-yellow);
 }
 
 #use_business {
