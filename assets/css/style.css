@@ -99,7 +99,7 @@ a {
 .btn {
   border: none;
   background-color: var(--db-primary-blue);
-  padding: 0.625rem 1rem;
+  padding: 0.5rem 1rem;
   color: var(--db-white);
 }
 
@@ -292,6 +292,8 @@ a {
 }
 
 #header_right button {
+  font-size: 1rem;
+  font-weight: 700;
   transition: background-color 0.3s;
 }
 
