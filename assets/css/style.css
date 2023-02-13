@@ -62,6 +62,10 @@ body {
   width: 100%;
 }
 
+.col-4-gap-50 {
+  width: calc(((100% / 12) * 4) - (100px / 3));
+}
+
 .jc-sb {
   justify-content: space-between;
 }
@@ -145,6 +149,12 @@ body {
   outline: 1px solid black;
 }
 
+.debug #operations .row > * {
+  height: 470px; 
+  outline: 1px solid black;
+  background-color: purple;
+}
+
 /* #endregion Debug */
 
 /* #region Header */
@@ -168,16 +178,17 @@ body {
   gap: 50px;
 }
 
-#plans_list div {
-  width: calc(((100% / 12) * 4) - (100px / 3));
-}
-
 #plans_list div:last-of-type {
   width: 100%;
 }
 
 #partner {
   margin: 150px 0;
+}
+
+#operations .row {
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
 /* #endregion Main */
