@@ -66,6 +66,10 @@ body {
   width: calc(((100% / 12) * 4) - (100px / 3));
 }
 
+.col-20-100 {
+  width: 20%;
+}
+
 .jc-sb {
   justify-content: space-between;
 }
@@ -203,6 +207,33 @@ body {
   height: 424px;
 }
 
+.debug #app_footer {
+  height: 570px;
+}
+
+.debug #footer_top {
+  height: 450px;
+}
+
+.debug #footer_top .row {
+  height: 100%;
+}
+
+.debug #footer_top .row > * {
+  outline: 1px solid black;
+  background-color: white;
+}
+
+.debug #footer_bottom {
+  height: 120px;
+}
+
+.debug #language {
+  height: 100%;
+  outline: 1px solid black;
+  background-color: red;
+}
+
 /* #endregion Debug */
 
 /* #region Header */
@@ -264,6 +295,16 @@ body {
 
 /* #region Footer */
 
+#app_footer {
+  background-color: var(--db-black);
+}
 
+#footer_top {
+  padding: 105px 0;
+}
+
+#footer_bottom {
+  padding: 20px 0;
+}
 
 /* #endregion Footer */
