@@ -63,7 +63,8 @@ hr {
 }
 
 .container_sm {
-  width: 85%;
+  width: 82%;
+  max-width: 1008px;
   margin: auto;
 }
 
