@@ -95,23 +95,23 @@ hr {
   width: 20%;
 }
 
-.jc-c {
+.just_cont_center {
   justify-content: center;
 }
 
-.jc-sb {
+.just_cont_space_between {
   justify-content: space-between;
 }
 
-.jc-fe {
+.just_cont_flex_end {
   justify-content: flex-end;
 }
 
-.ai-c {
+.align_items_center {
   align-items: center;
 }
 
-.ai-fs {
+.align_items_flex_start {
   align-items: flex-start;
 }
 
