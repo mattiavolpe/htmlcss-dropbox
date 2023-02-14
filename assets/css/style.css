@@ -529,7 +529,7 @@ hr {
 
 #partners_logos .col-4:nth-child(2) {
   background-color: var(--db-gray);
-  padding: 3.125rem;
+  padding: 2%;
 }
 
 #partners_logos .col-4:nth-child(2) img {
