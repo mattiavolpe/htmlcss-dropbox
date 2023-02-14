@@ -374,6 +374,10 @@ hr {
   margin-bottom: 4.6875rem;
 }
 
+#jumbo .row a {
+  color: var(--db-black);
+}
+
 #plans {
   padding-top: 5.625rem;
 }
@@ -705,7 +709,7 @@ hr {
 }
 
 #app_header li:not(#header_right li:last-of-type):hover {
-  border-bottom: 2px solid var(--db-black);
+  border-bottom: 3px solid var(--db-black);
 }
 
 #faq .row:hover .answer,
