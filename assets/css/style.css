@@ -61,6 +61,7 @@ hr {
   bottom: 1.25rem;
   right: 1.25rem;
   z-index: 1;
+  scale: 1;
   width: 60px;
   aspect-ratio: 1 / 1;
   text-align: center;
@@ -69,6 +70,7 @@ hr {
   color: var(--db-white);
   border-radius: 50%;
   box-shadow: 0 5px 10px 0 var(--db-dark-gray);
+  transition: background-color 0.4s;
 }
 
 .container {
@@ -137,6 +139,9 @@ hr {
   border: none;
   padding: 0.5rem 1rem;
   box-shadow: 0 5px 10px 0 var(--db-dark-gray);
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .btn.wide {
@@ -351,6 +356,12 @@ hr {
 
 #header_right > nav > ul > li:last-child {
   margin-left: 1.25rem;
+}
+
+#app_header li:not(#header_right li:last-of-type) {
+  padding-left: 0;
+  padding-right: 0;
+  transition: padding 0.4s;
 }
 
 #app_header a {
@@ -705,7 +716,18 @@ hr {
 
 /* #region Effects */
 
-.btn.blue:hover {
+.back_to_top:active {
+  bottom: calc(1.25rem - 2px);
+  scale: 0.95;
+}
+
+.btn:active {
+  top: 2px;
+  scale: 0.95;
+}
+
+.btn.blue:hover,
+.back_to_top:hover {
   background-color: var(--db-primary-blue-hover);
   cursor: pointer;
 }
@@ -722,6 +744,7 @@ hr {
 
 #app_header li:not(#header_right li:last-of-type):hover {
   border-bottom: 3px solid var(--db-black);
+  padding: 0 1rem;
 }
 
 #faq .row:hover .answer,
