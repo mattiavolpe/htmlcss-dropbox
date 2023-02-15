@@ -56,6 +56,21 @@ hr {
 
 /* #region Utility */
 
+.back_to_top {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 1;
+  width: 60px;
+  aspect-ratio: 1;
+  text-align: center;
+  line-height: 60px;
+  background-color: var(--db-primary-blue);
+  color: var(--db-white);
+  border-radius: 50%;
+  box-shadow: 0 5px 10px 0 var(--db-dark-gray);
+}
+
 .container {
   width: 96%;
   max-width: 1176px;
@@ -121,6 +136,7 @@ hr {
   font-weight: 700;
   border: none;
   padding: 0.5rem 1rem;
+  box-shadow: 0 5px 10px 0 var(--db-dark-gray);
 }
 
 .btn.wide {
