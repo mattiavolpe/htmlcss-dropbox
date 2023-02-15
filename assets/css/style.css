@@ -452,13 +452,9 @@ hr {
   font-size: 1.5rem;
 }
 
-#plans_list ul > li {
+#plans_list ul > li.row {
   margin-bottom: 1.5625rem;
-}
-
-#plans_list .card_main_content i,
-#plans_list .card_main_content i + span {
-  line-height: 1.25rem;
+  align-items: baseline;
 }
 
 #plans_list .card_main_content .row i {
