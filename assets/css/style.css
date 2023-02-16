@@ -765,6 +765,15 @@ hr {
   color: var(--db-dark-gray);
 }
 
+*::selection {
+  background-color: var(--db-primary-blue);
+  color: var(--db-white);
+}
+
+#partners_logos .col-4.row .col-6 img::selection {
+  background-color: #ff9e00;
+}
+
 @keyframes fadein {
   from {opacity: 0;}
   to {opacity: 1;}  
